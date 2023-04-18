@@ -44,6 +44,10 @@ const Form = ({ onEdit }) => {
             <Label>Telefone</Label>
             <Input name="fone" />
           </InputArea>
+          <InputArea>
+            <Label>Data de Nascimento</Label>
+            <Input name="data_nascimento" type="date" />
+          </InputArea>
         </FormContainer>
 
   );
