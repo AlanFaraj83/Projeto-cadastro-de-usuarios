@@ -44,19 +44,19 @@ const Form = ({ onEdit }) => {
         <FormContainer ref={ref}>
           <InputArea>
             <Label>Nome</Label>
-            <Input name="nome" />
+            <Input name="nome"/>
           </InputArea>
           <InputArea>
             <Label>E-mail</Label>
-            <Input name="email" type="email" />
+            <Input name="email" type="email"/>
           </InputArea>
           <InputArea>
             <Label>Telefone</Label>
-            <Input name="fone" />
+            <Input name="fone"/>
           </InputArea>
           <InputArea>
             <Label>Data de Nascimento</Label>
-            <Input name="data_nascimento" type="date" />
+            <Input name="data_nascimento" type="date"/>
           </InputArea>
 
           <Button type="submit">SALVAR</Button>
