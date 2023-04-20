@@ -35,7 +35,11 @@ const Button = styled.button`
   background-color: #2c73d2;
   color: white;
   height: 42px;
+  
 `;
+
+
+
 
 const Form = ({ onEdit }) => {
     const ref = useRef();
