@@ -35,8 +35,11 @@ const Button = styled.button`
   background-color: #2c73d2;
   color: white;
   height: 42px;
+  backgroundColor: isHover ? 'lightblue' : 'rgb(0, 191, 255)',
+
   
 `;
+
 
 
 
