@@ -85,7 +85,17 @@ const Form = ({ onEdit }) => {
           .then(({ data }) => toast.success(data))
     
           .catch(({ data }) => toast.error(data));
-      }    
+      } else {
+        await axios
+          .post("http://localhost:8800", {
+            nome: user.nome.value,
+            email: user.email.value,
+            fone: user.fone.value,
+            data_nascimento: user.data_nascimento.value,
+          })
+          .then(({ data }) => toast.success(data))
+          .catch(({ data }) => toast.error(data));
+      }   
     };
 
     return (
