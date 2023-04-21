@@ -46,7 +46,7 @@ const Button = styled.button`
 
 
 
-const Form = ({ onEdit }) => {
+const Form = ({ getUsers, onEdit, setOnEdit }) => {
     const ref = useRef();
 
     useEffect(() => {
@@ -96,6 +96,14 @@ const Form = ({ onEdit }) => {
           .then(({ data }) => toast.success(data))
           .catch(({ data }) => toast.error(data));
       }   
+
+      user.nome.value = "";
+      user.email.value = "";
+      user.fone.value = "";
+      user.data_nascimento.value = "";
+
+      setOnEdit(null);
+      getUsers();
     };
 
     return (
